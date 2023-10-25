@@ -40,7 +40,7 @@ func fileWrite(m log.MsgType, o log.OutType, config map[string]interface{}, msg 
 	}
 
 	output = fmt.Sprintf("%s [%s] %s%s",
-		now().UTC().Format(log.TimeFormat),
+		now().Format(log.TimeFormat),
 		log.Prefixes[m],
 		debugInfo,
 		output)
